@@ -1,4 +1,4 @@
-package com.example.jsp_excersise3.bean;
+package com.example.bean;
 
 import java.util.Date;
 
@@ -9,7 +9,10 @@ public class BoardVO {
 	private String content;
 	private Date regdate;
 	private int cnt;
-	
+	private String category;
+	private String photo;
+	private Date mod_date;
+
 	public int getSeq() {
 		return seq;
 	}
@@ -34,11 +37,19 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
 	public Date getRegdate() {
 		return regdate;
 	}
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
+	}
+
+	public Date getModdate() {
+		return mod_date;
+	}
+	public void setModdate(Date moddate) {
+		this.mod_date = moddate;
 	}
 	public int getCnt() {
 		return cnt;
@@ -46,4 +57,12 @@ public class BoardVO {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public void setPhoto(String photo) {this.photo =  photo;}
+	public String getPhoto() {return photo;}
 }

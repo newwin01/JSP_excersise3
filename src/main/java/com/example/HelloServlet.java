@@ -1,4 +1,4 @@
-package com.example.jsp_excersise3;
+package com.example;
 
 import java.io.*;
 import javax.servlet.http.*;
